@@ -1,0 +1,8 @@
+W celu przewidywania rozwoju wirusa w Gdańsku pomyślałem ,że zrobie to w następujący sposób:
+-Jako ,że nie mam bezpośrednich informacji ile osob bezpośrednio zarażało się w Gdańsku,postanowiłem to wyliczyć tak,że
+wezme stosunek ilości ludzi w Gdańsku ,do ilości ludzi w Polsce.Dało to całkiem dobre wyniki.
+-Do przewidywania postanowiłem użyć funkcji curve_fit i jako funkcję która ma być dopasowana zastosowałem funkcję wykładniczą.
+Według mnie było to rozsądnym posunięciem,ponieważ jest to choroba,ona sie przenosi od każdego do każdego,więc ma rozwój wykładniczy.
+Próbowałem również użyć biblioteki Keras,do stworzenia modelu Sequential,by dopasować go do naszych danych.
+Niestety jednak wyniki naszych przewidywań były w dużej mierze zależne od funkcji aktywacji jaką przyjmiemy i nie pokrywały się one prawie wcale,
+z wartościami otrzymanymi z późniejszych próbek. 

@@ -1,0 +1,25 @@
+Jako ,że zagadnienie omawiane w danym ćwiczeniu jest problemem NP ,ciężko było znaleźć optymalny algorytm.
+Uznałem ,więc ,że w celu ułożenia naszej planszy klocki będą robić kilka rzeczy.
+1.Wybieramy losowy klocek
+2.Liczymy objętość aktualną ,czyli ile miejsca od lewej ścianki planszy zajmują klocki.
+3.Wykonujemy losowy ruch
+4.Liczymy znowu objętość
+5.Jeżeli nowa objętość jest lepsza niż stara,to zostawiamy ten ruch
+6.Jeśli nie ,to cofamy ten ruch
+7.Powtarzamy punkty 2-6 w zależności od potrzeb
+8.Następnie powtarzamy pkt. 1 .
+W tym miejscu warto się na moment zatrzymać i zastanowić.Łatwo jest dostrzec ,że wadą tego rozwiązania jest tak na prawde to,że klocki cały czas będą się 
+chciały po prostu przesuwać w lewo ,by zminimalizować objętość.Jednak jeśli coś im będzie stało na przeszkodzie,to nie wykonają ruchy wyminięcia,
+ponieważ ten ruch nie jest optymalny pod względem pkt. 5 . Dlatego też doszedłem do wniosku,że trzeba im dać pewne pole do manewru,empirycznie wyszło mi ,że
+mogą to być dwa "negatywne objętościowo " ruchy,jednak jeżeli doprowadzą one w końcu do polepszenia objętości,to je zostawiamy.
+Jeśli nie doprowadzą ,to cofamy ostatni ruch.
+Ten sposób rozumowania znacząco wpłynął na wyniki uzyskiwane przez dany algorytm.Średnia objętość losowo wygenerowanych klocków to około 160,a
+mój algorytm w większości przypadków zapewnia około 80 ,więc widać ,że jest to zmniejszenie prawie o połowę.
+Jak na stopień zaawansowania problemu uznaję to za dobry wynik.
+
+Oczywiście oprócz algorytmu minimalizacji ,trzeba było też dodać poruszanie klockami.Nie było sprecyzowane jak to ma wyglądać,
+więc postanowiłem zrobić następująco.
+1.Wybieramy klocek i klikamy w niego myszką.
+2.Guzikamy z prawej strony planszy chodzimy klockiem w różne strony
+3.Każdy z klocków ma swoją nazwę i wyświetla się ona po boku planszy.
+ 
